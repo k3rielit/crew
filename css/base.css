@@ -1,0 +1,18 @@
+:root {
+    --retrowave-sunset-gradient: linear-gradient(90deg, rgba(255,211,25,1) 0%, rgba(255,144,31,1) 30%, rgba(255,41,117,1) 74%, rgba(242,34,255,1) 88%, rgba(140,30,255,1) 99%);
+}
+
+@keyframes animated_text {
+	0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
+
+.retrofade {
+	background: var(--retrowave-sunset-gradient);
+	background-size: 900%;
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: animated_text 6s ease-in-out infinite;
+}
