@@ -1,0 +1,117 @@
+.text-retrofade {
+	background: var(--retrowave-sunset-gradient);
+    background-size: 4000% 1000%;
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient 6s linear infinite;
+}
+
+.bg-retrofade {
+    background: var(--retrowave-sunset-gradient);
+    background-size: 4000% 1000%;
+	animation: gradient 6s linear infinite;
+}
+
+.text-crew {
+	background: var(--crew-gradient);
+	background-size: 1000% 1000%;
+	-webkit-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: gradient-mirror 30s ease infinite;
+}
+
+.bg-crew {
+	background: var(--crew-gradient);
+	background-size: 1000% 1000%;
+	animation: gradient-mirror 30s ease infinite;
+}
+
+.btn-crew {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.btn-crew:hover, .btn-crew.active {
+	background: var(--crew-gradient);
+	background-size: 1000% 1000%;
+	animation: gradient-mirror 30s ease infinite;
+	color: #fff;
+}
+
+/* Street Racing */
+.btn-outline-sr {
+    font-weight: bold;
+    --bs-btn-color: #ffe01e;
+    --bs-btn-bg: rgba(0,0,0,0);
+    --bs-btn-border-color: #ffe01e;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #ffe01e;
+    --bs-btn-hover-border-color: #ffe01e;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #ffe01e;
+    --bs-btn-active-border-color: #ffe01e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #d2be3e;
+    --bs-btn-disabled-border-color: #d2be3e;
+}
+
+/* Offroad */
+.btn-outline-or {
+    font-weight: bold;
+    --bs-btn-color: #fc8d21;
+    --bs-btn-bg: rgba(0,0,0,0);
+    --bs-btn-border-color: #fc8d21;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #fc8d21;
+    --bs-btn-hover-border-color: #fc8d21;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #fc8d21;
+    --bs-btn-active-border-color: #fc8d21;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #dc8733;
+    --bs-btn-disabled-border-color: #dc8733;
+}
+
+/* Freestyle */
+.btn-outline-fs {
+    font-weight: bold;
+    --bs-btn-color: #fc1965;
+    --bs-btn-bg: rgba(0,0,0,0);
+    --bs-btn-border-color: #fc1965;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #fc1965;
+    --bs-btn-hover-border-color: #fc1965;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #fc1965;
+    --bs-btn-active-border-color: #fc1965;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #d73168;
+    --bs-btn-disabled-border-color: #d73168;
+}
+
+/* Pro Racing */
+.btn-outline-pr {
+    font-weight: bold;
+    --bs-btn-color: #02d3fa;
+    --bs-btn-bg: rgba(0,0,0,0);
+    --bs-btn-border-color: #02d3fa;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #02d3fa;
+    --bs-btn-hover-border-color: #02d3fa;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #02d3fa;
+    --bs-btn-active-border-color: #02d3fa;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #3abed5;
+    --bs-btn-disabled-border-color: #3abed5;
+}

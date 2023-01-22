@@ -1,18 +1,15 @@
 :root {
-    --retrowave-sunset-gradient: linear-gradient(90deg, rgba(255,211,25,1) 0%, rgba(255,144,31,1) 30%, rgba(255,41,117,1) 74%, rgba(242,34,255,1) 88%, rgba(140,30,255,1) 99%);
+    --retrowave-sunset-gradient: linear-gradient(90deg,rgba(140,30,255,1) 0%,rgba(242,34,255,1) 6%,rgba(255,41,117,1) 13%,rgba(255,144,31,1) 32%,rgba(255,211,25,1) 50%,rgba(255,144,31,1) 68%,rgba(255,41,117,1) 87%,rgba(242,34,255,1) 94%,rgba(140,30,255,1) 100%);
+    --crew-gradient: linear-gradient(-45deg,#ff9f21,#ff9f21,#fb5141,#fb5141,#ff9f21,#ff9f21,#fb5141,#fb5141,#ff9f21,#ff9f21,#fb5141,#fb5141,#ff9f21,#ff9f21,#fb5141,#fb5141);
 }
 
-@keyframes animated_text {
-	0% { background-position: 0px 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0px 50%; }
+@keyframes gradient-mirror {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.retrofade {
-	background: var(--retrowave-sunset-gradient);
-	background-size: 900%;
-	-webkit-background-clip: text;
-    background-clip: text;
-	-webkit-text-fill-color: transparent;
-	animation: animated_text 6s ease-in-out infinite;
+@keyframes gradient {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 50%; }
 }
