@@ -28,90 +28,169 @@
 	animation: gradient-mirror 30s ease infinite;
 }
 
+
 .btn-crew {
 	font-weight: bold;
 	text-transform: uppercase;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #212529;
+    --bs-btn-border-color: #212529;
+    --bs-btn-focus-shadow-rgb: 66,70,73;
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-border-color: var(--transparent);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #424649;
+    --bs-btn-hover-border-color: #373b3e;
 }
-
 .btn-crew:hover, .btn-crew.active {
 	background: var(--crew-gradient);
 	background-size: 1000% 1000%;
 	animation: gradient-mirror 30s ease infinite;
-	color: #fff;
 }
 
 /* Street Racing */
-.btn-outline-sr {
+.btn-sr {
     font-weight: bold;
-    --bs-btn-color: #ffe01e;
-    --bs-btn-bg: rgba(0,0,0,0);
-    --bs-btn-border-color: #ffe01e;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--crew-streetracing);
+    --bs-btn-border-color: var(--crew-streetracing);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #ffe01e;
-    --bs-btn-hover-border-color: #ffe01e;
+    --bs-btn-hover-bg: var(--crew-streetracing);
+    --bs-btn-hover-border-color: var(--crew-streetracing);
     --bs-btn-focus-shadow-rgb: 66, 70, 73;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #ffe01e;
-    --bs-btn-active-border-color: #ffe01e;
+    --bs-btn-active-bg: var(--crew-streetracing);
+    --bs-btn-active-border-color: var(--crew-streetracing);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #d2be3e;
-    --bs-btn-disabled-border-color: #d2be3e;
+    --bs-btn-disabled-bg: var(--crew-streetracing-subtle);
+    --bs-btn-disabled-border-color: var(--crew-streetracing-subtle);
+}
+.btn-outline-sr {
+    font-weight: bold;
+    --bs-btn-color: var(--crew-streetracing);
+    --bs-btn-bg: var(--transparent);
+    --bs-btn-border-color: var(--crew-streetracing);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--crew-streetracing);
+    --bs-btn-hover-border-color: var(--crew-streetracing);
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--crew-streetracing);
+    --bs-btn-active-border-color: var(--crew-streetracing);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--crew-streetracing-subtle);
+    --bs-btn-disabled-border-color: var(--crew-streetracing-subtle);
 }
 
 /* Offroad */
-.btn-outline-or {
+.btn-or {
     font-weight: bold;
-    --bs-btn-color: #fc8d21;
-    --bs-btn-bg: rgba(0,0,0,0);
-    --bs-btn-border-color: #fc8d21;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--crew-offroad);
+    --bs-btn-border-color: var(--crew-offroad);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #fc8d21;
-    --bs-btn-hover-border-color: #fc8d21;
+    --bs-btn-hover-bg: var(--crew-offroad);
+    --bs-btn-hover-border-color: var(--crew-offroad);
     --bs-btn-focus-shadow-rgb: 66, 70, 73;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #fc8d21;
-    --bs-btn-active-border-color: #fc8d21;
+    --bs-btn-active-bg: var(--crew-offroad);
+    --bs-btn-active-border-color: var(--crew-offroad);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #dc8733;
-    --bs-btn-disabled-border-color: #dc8733;
+    --bs-btn-disabled-bg: var(--crew-offroad-subtle);
+    --bs-btn-disabled-border-color: var(--crew-offroad-subtle);
+}
+.btn-outline-or {
+    font-weight: bold;
+    --bs-btn-color: var(--crew-offroad);
+    --bs-btn-bg: var(--transparent);
+    --bs-btn-border-color: var(--crew-offroad);
+    --bs-btn-hover-color:#fff;
+    --bs-btn-hover-bg: var(--crew-offroad);
+    --bs-btn-hover-border-color: var(--crew-offroad);
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color:#fff;
+    --bs-btn-active-bg: var(--crew-offroad);
+    --bs-btn-active-border-color: var(--crew-offroad);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color:#fff;
+    --bs-btn-disabled-bg:  var(--crew-offroad-subtle);
+    --bs-btn-disabled-border-color: var(--crew-offroad-subtle);
 }
 
 /* Freestyle */
-.btn-outline-fs {
+.btn-fs {
     font-weight: bold;
-    --bs-btn-color: #fc1965;
-    --bs-btn-bg: rgba(0,0,0,0);
-    --bs-btn-border-color: #fc1965;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--crew-freestyle);
+    --bs-btn-border-color: var(--crew-freestyle);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #fc1965;
-    --bs-btn-hover-border-color: #fc1965;
+    --bs-btn-hover-bg: var(--crew-freestyle);
+    --bs-btn-hover-border-color: var(--crew-freestyle);
     --bs-btn-focus-shadow-rgb: 66, 70, 73;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #fc1965;
-    --bs-btn-active-border-color: #fc1965;
+    --bs-btn-active-bg: var(--crew-freestyle);
+    --bs-btn-active-border-color: var(--crew-freestyle);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #d73168;
-    --bs-btn-disabled-border-color: #d73168;
+    --bs-btn-disabled-bg: var(--crew-freestyle-subtle);
+    --bs-btn-disabled-border-color: var(--crew-freestyle-subtle);
+}
+.btn-outline-fs {
+    font-weight: bold;
+    --bs-btn-color: var(--crew-freestyle);
+    --bs-btn-bg: var(--transparent);
+    --bs-btn-border-color: var(--crew-freestyle);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--crew-freestyle);
+    --bs-btn-hover-border-color: var(--crew-freestyle);
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--crew-freestyle);
+    --bs-btn-active-border-color: var(--crew-freestyle);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--crew-freestyle-subtle);
+    --bs-btn-disabled-border-color: var(--crew-freestyle-subtle);
 }
 
 /* Pro Racing */
-.btn-outline-pr {
+.btn-pr {
     font-weight: bold;
-    --bs-btn-color: #02d3fa;
-    --bs-btn-bg: rgba(0,0,0,0);
-    --bs-btn-border-color: #02d3fa;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--crew-proracing);
+    --bs-btn-border-color: var(--crew-proracing);
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #02d3fa;
-    --bs-btn-hover-border-color: #02d3fa;
+    --bs-btn-hover-bg: var(--crew-proracing);
+    --bs-btn-hover-border-color: var(--crew-proracing);
     --bs-btn-focus-shadow-rgb: 66, 70, 73;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #02d3fa;
-    --bs-btn-active-border-color: #02d3fa;
+    --bs-btn-active-bg: var(--crew-proracing);
+    --bs-btn-active-border-color: var(--crew-proracing);
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
     --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #3abed5;
-    --bs-btn-disabled-border-color: #3abed5;
+    --bs-btn-disabled-bg: var(--crew-proracing-subtle);
+    --bs-btn-disabled-border-color: var(--crew-proracing-subtle);
+}
+.btn-outline-pr {
+    font-weight: bold;
+    --bs-btn-color: var(--crew-proracing);
+    --bs-btn-bg: var(--transparent);
+    --bs-btn-border-color: var(--crew-proracing);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--crew-proracing);
+    --bs-btn-hover-border-color: var(--crew-proracing);
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--crew-proracing);
+    --bs-btn-active-border-color: var(--crew-proracing);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--crew-proracing-subtle);
+    --bs-btn-disabled-border-color: var(--crew-proracing-subtle);
 }

@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Crew</title>
     <!-- Libs -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Themes -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/themes.default.css">
@@ -21,141 +19,140 @@
     <nav class="navbar sticky-top navbar-expand-md bg-body-tertiary">
         <div class="container-fluid">
 
+            <!-- Navbar left-->
             <object type="image/svg+xml" data="svg/crew2.svg" class="svg-brand me-3 ms-1" width="30" height="30"></object>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapsible">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <!-- Navbar center -->
+            <ul class="navbar-nav justify-content-center flex-fill" role="tablist">
+                <li class="nav-item me-2">
+                    <button class="btn btn-crew active" id="vehicles-tab" data-bs-toggle="tab" data-bs-target="#vehicles-tab-pane" type="button" role="tab" aria-controls="vehicles-tab-pane" aria-selected="true">VEHICLES</button>
+                </li>
+                <li class="nav-item me-2">
+                    <button class="btn btn-crew" id="events-tab" data-bs-toggle="tab" data-bs-target="#events-tab-pane" type="button" role="tab" aria-controls="events-tab-pane" aria-selected="false">EVENTS</button>
+                </li>
+                <li class="nav-item me-2">
+                    <button class="btn btn-crew" id="summit-tab" data-bs-toggle="tab" data-bs-target="#summit-tab-pane" type="button" role="tab" aria-controls="summit-tab-pane" aria-selected="false">SUMMIT</button>
+                </li>
+            </ul>
 
-            <div class="collapse navbar-collapse" id="navbar-collapsible">
-                <ul class="navbar-nav justify-content-center flex-fill">
-                    <li class="nav-item me-2">
-                        <button type="button" class="btn btn-dark btn-crew">VEHICLES</button>
-                    </li>
-                    <li class="nav-item me-2">
-                        <button type="button" class="btn btn-dark btn-crew">RACES</button>
-                    </li>
-                    <li class="nav-item me-2">
-                        <button type="button" class="btn btn-dark btn-crew">SUMMIT</button>
-                    </li>
+            <!-- Navbar right side -->
+            <ul class="navbar-nav">
+                <li class="nav-item me-2">
+                    <button type="button" class="btn btn-dark btn-crew">
+                        <i class="las la-play"></i>
+                    </button>
+                </li>
+                <li class="nav-item me-2">
+                    <button type="button" class="btn btn-dark btn-crew">
+                        <i class="las la-brush"></i>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark btn-crew">
+                        <i class="las la-cog"></i>
+                    </button>
+                </li>
+            </ul>
 
-                    <!--<li class="nav-item me-2">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                        <label class="btn btn-outline-primary" for="btnradio1">VEHICLES</label>
-                    </li>
-                    <li class="nav-item me-2">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio2">RACES</label>
-                    </li>
-                    <li class="nav-item me-2">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                        <label class="btn btn-outline-primary" for="btnradio3">SUMMIT</label>
-                    </li>-->
-
-                </ul>
-
-                <ul class="navbar-nav">
-                    <li class="nav-item me-2">
-                        <button type="button" class="btn btn-dark btn-crew">
-                            <i class="las la-play"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item me-2">
-                        <button type="button" class="btn btn-dark btn-crew">
-                            <i class="las la-brush"></i>
-                        </button>
-                    </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-dark btn-crew">
-                            <i class="las la-cog"></i>
-                        </button>
-                    </li>
-                </ul>
-
-            </div>
         </div>
     </nav>
 
     <!-- Pages -->
-    <main class="mt-4">
-        <!-- Page:Vehicles -->
-        <div class="container-fluid">
+    <main class="mt-4 tab-content">
 
-            <div class="row">
-                <div class="col-12">
-                    <div class="input-group justify-content-center">
-                        <!-- Street Racing #ffe01e -->
-                        <div class="btn-group me-2" role="group">
-                            <input type="checkbox" class="btn-check" id="filter-sr" autocomplete="off">
-                            <label class="btn btn-outline-sr" for="filter-sr">SR</label>
-                            <input type="checkbox" class="btn-check" id="filter-hc" autocomplete="off" checked>
-                            <label class="btn btn-outline-sr" for="filter-hc">HC</label>
-                            <input type="checkbox" class="btn-check" id="filter-df" autocomplete="off">
-                            <label class="btn btn-outline-sr disabled" for="filter-df">DF</label>
-                            <input type="checkbox" class="btn-check" id="filter-dr" autocomplete="off">
-                            <label class="btn btn-outline-sr" for="filter-dr">DR</label>
+            <!-- Page:Vehicles -->
+            <div class="tab-pane fade show active" id="vehicles-tab-pane" role="vehicles-tab" aria-labelledby="home-tab" tabindex="0">
+                <div class="container-fluid">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="input-group justify-content-center">
+                                <!-- Street Racing #ffe01e -->
+                                <div class="btn-group me-2" role="group">
+                                    <input type="checkbox" class="btn-check" id="filter-sr" autocomplete="off" checked>
+                                    <label class="btn btn-outline-sr" for="filter-sr">SR</label>
+                                    <input type="checkbox" class="btn-check" id="filter-hc" autocomplete="off" checked>
+                                    <label class="btn btn-outline-sr" for="filter-hc">HC</label>
+                                    <input type="checkbox" class="btn-check" id="filter-df" autocomplete="off" checked>
+                                    <label class="btn btn-outline-sr" for="filter-df">DF</label>
+                                    <input type="checkbox" class="btn-check" id="filter-dr" autocomplete="off" checked>
+                                    <label class="btn btn-outline-sr" for="filter-dr">DR</label>
+                                </div>
+                                <!-- Offroad #fc8d21 -->
+                                <div class="btn-group me-2" role="group">
+                                    <input type="checkbox" class="btn-check" id="filter-tc" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-tc">TC</label>
+                                    <input type="checkbox" class="btn-check" id="filter-pb" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-pb">PB</label>
+                                    <input type="checkbox" class="btn-check" id="filter-a" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-a">A</label>
+                                    <input type="checkbox" class="btn-check" id="filter-ar" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-ar">AR</label>
+                                </div>
+                                <!-- Freestyle #fc1965 -->
+                                <div class="btn-group me-2" role="group">
+                                    <input type="checkbox" class="btn-check" id="filter-rr" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-rr">RR</label>
+                                    <input type="checkbox" class="btn-check" id="filter-rx" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-rx">RX</label>
+                                    <input type="checkbox" class="btn-check" id="filter-mx" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-mx">MX</label>
+                                    <input type="checkbox" class="btn-check" id="filter-ht" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-ht">HT</label>
+                                </div>
+                                <!-- Pro Racing #02d3fa -->
+                                <div class="btn-group me-2" role="group">
+                                    <input type="checkbox" class="btn-check" id="filter-ab" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-ab">AB</label>
+                                    <input type="checkbox" class="btn-check" id="filter-js" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-js">JS</label>
+                                    <input type="checkbox" class="btn-check" id="filter-mt" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-mt">MT</label>
+                                    <input type="checkbox" class="btn-check" id="filter-dd" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-dd">DD</label>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search by name" id="filter-text" autocomplete="car-name">
+                            </div>
                         </div>
-                        <!-- Offroad #fc8d21 -->
-                        <div class="btn-group me-2" role="group">
-                            <input type="checkbox" class="btn-check" id="filter-tc" autocomplete="off">
-                            <label class="btn btn-outline-or" for="filter-tc">TC</label>
-                            <input type="checkbox" class="btn-check" id="filter-pb" autocomplete="off" checked>
-                            <label class="btn btn-outline-or" for="filter-pb">PB</label>
-                            <input type="checkbox" class="btn-check" id="filter-a" autocomplete="off">
-                            <label class="btn btn-outline-or disabled" for="filter-a">A</label>
-                            <input type="checkbox" class="btn-check" id="filter-ar" autocomplete="off">
-                            <label class="btn btn-outline-or" for="filter-ar">AR</label>
-                        </div>
-                        <!-- Freestyle #fc1965 -->
-                        <div class="btn-group me-2" role="group">
-                            <input type="checkbox" class="btn-check" id="filter-rr" autocomplete="off">
-                            <label class="btn btn-outline-fs" for="filter-rr">RR</label>
-                            <input type="checkbox" class="btn-check" id="filter-rx" autocomplete="off" checked>
-                            <label class="btn btn-outline-fs" for="filter-rx">RX</label>
-                            <input type="checkbox" class="btn-check" id="filter-mx" autocomplete="off">
-                            <label class="btn btn-outline-fs disabled" for="filter-mx">MX</label>
-                            <input type="checkbox" class="btn-check" id="filter-ht" autocomplete="off">
-                            <label class="btn btn-outline-fs" for="filter-ht">HT</label>
-                        </div>
-                        <!-- Pro Racing #02d3fa -->
-                        <div class="btn-group me-2" role="group">
-                            <input type="checkbox" class="btn-check" id="filter-ab" autocomplete="off">
-                            <label class="btn btn-outline-pr" for="filter-ab">AB</label>
-                            <input type="checkbox" class="btn-check" id="filter-js" autocomplete="off" checked>
-                            <label class="btn btn-outline-pr" for="filter-js">JS</label>
-                            <input type="checkbox" class="btn-check" id="filter-mt" autocomplete="off">
-                            <label class="btn btn-outline-pr disabled" for="filter-mt">MT</label>
-                            <input type="checkbox" class="btn-check" id="filter-dd" autocomplete="off">
-                            <label class="btn btn-outline-pr" for="filter-dd">DD</label>
-                        </div>
-                        <input type="text" class="form-control" placeholder="Search by name" id="filter-text">
                     </div>
+
+                    <div class="row mt-3">
+                        <!-- Generated cards -->
+                    </div>
+
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                    <!-- Generated list -->
-                </div>
-            </div>
+            <!-- Page:Events -->
+            <div class="tab-pane fade" id="events-tab-pane" role="tabpanel" aria-labelledby="events-tab" tabindex="1">Events content</div>
 
-        </div>
+            <!-- Page:Summit -->
+            <div class="tab-pane fade" id="summit-tab-pane" role="tabpanel" aria-labelledby="summit-tab" tabindex="2">Summit content</div>
+
     </main>
 
     <!-- Templates -->
-    <div id="templates" style="display:none;">
+    <div id="templates">
 
         <!-- Vehicles:ListItem -->
-        <div class="input-group justify-content-center">
-            <!-- ... -->
+        <div id="templates-vehicles-listitem">
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <div class="card" role="button">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <button class="car-class btn btn-sm">-</button>
+                            <span class="car-brand">-</span>
+                        </h5>
+                        <h6 class="car-name card-subtitle text-muted">-</h6>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>

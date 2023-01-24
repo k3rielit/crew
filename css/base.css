@@ -1,6 +1,15 @@
 :root {
+    --transparent: rgba(0,0,0,0);
     --retrowave-sunset-gradient: linear-gradient(90deg,rgba(140,30,255,1) 0%,rgba(242,34,255,1) 6%,rgba(255,41,117,1) 13%,rgba(255,144,31,1) 32%,rgba(255,211,25,1) 50%,rgba(255,144,31,1) 68%,rgba(255,41,117,1) 87%,rgba(242,34,255,1) 94%,rgba(140,30,255,1) 100%);
     --crew-gradient: linear-gradient(-45deg,#ff9f21,#ff9f21,#fb5141,#fb5141,#ff9f21,#ff9f21,#fb5141,#fb5141,#ff9f21,#ff9f21,#fb5141,#fb5141,#ff9f21,#ff9f21,#fb5141,#fb5141);
+    --crew-streetracing: #ffe01e;
+    --crew-offroad: #fc8d21;
+    --crew-freestyle: #fc1965;
+    --crew-proracing: #02d3fa;
+    --crew-streetracing-subtle: #d2be3e;
+    --crew-offroad-subtle: #dc8733;
+    --crew-freestyle-subtle: #d73168;
+    --crew-proracing-subtle: #3abed5;
 }
 
 @keyframes gradient-mirror {
@@ -12,4 +21,8 @@
 @keyframes gradient {
     0% { background-position: 0% 0%; }
     100% { background-position: 100% 50%; }
+}
+
+#templates {
+    display: none;
 }
