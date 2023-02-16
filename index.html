@@ -31,7 +31,7 @@
                     <button class="btn btn-crew" id="events-tab" data-bs-toggle="tab" data-bs-target="#events-tab-pane" type="button" role="tab" aria-controls="events-tab-pane" aria-selected="false">EVENTS</button>
                 </li>
                 <li class="nav-item me-2">
-                    <button class="btn btn-crew" id="summit-tab" data-bs-toggle="tab" data-bs-target="#summit-tab-pane" type="button" role="tab" aria-controls="summit-tab-pane" aria-selected="false">SUMMIT</button>
+                    <button class="btn btn-crew" id="summit-popup" data-bs-toggle="modal" data-bs-target="#summit-modal" type="button">SUMMIT</button>
                 </li>
             </ul>
 
@@ -71,45 +71,47 @@
                                 <div class="btn-group me-2" role="group">
                                     <input type="checkbox" class="btn-check" id="filter-sr" autocomplete="off" checked>
                                     <label class="btn btn-outline-sr" for="filter-sr">SR</label>
-                                    <input type="checkbox" class="btn-check" id="filter-hc" autocomplete="off" checked>
-                                    <label class="btn btn-outline-sr" for="filter-hc">HC</label>
                                     <input type="checkbox" class="btn-check" id="filter-df" autocomplete="off" checked>
                                     <label class="btn btn-outline-sr" for="filter-df">DF</label>
                                     <input type="checkbox" class="btn-check" id="filter-dr" autocomplete="off" checked>
                                     <label class="btn btn-outline-sr" for="filter-dr">DR</label>
+                                    <input type="checkbox" class="btn-check" id="filter-hc" autocomplete="off" checked>
+                                    <label class="btn btn-outline-sr" for="filter-hc">HC</label>
                                 </div>
                                 <!-- Offroad #fc8d21 -->
                                 <div class="btn-group me-2" role="group">
-                                    <input type="checkbox" class="btn-check" id="filter-tc" autocomplete="off" checked>
-                                    <label class="btn btn-outline-or" for="filter-tc">TC</label>
-                                    <input type="checkbox" class="btn-check" id="filter-pb" autocomplete="off" checked>
-                                    <label class="btn btn-outline-or" for="filter-pb">PB</label>
-                                    <input type="checkbox" class="btn-check" id="filter-a" autocomplete="off" checked>
-                                    <label class="btn btn-outline-or" for="filter-a">A</label>
-                                    <input type="checkbox" class="btn-check" id="filter-ar" autocomplete="off" checked>
-                                    <label class="btn btn-outline-or" for="filter-ar">AR</label>
+                                    <input type="checkbox" class="btn-check" id="filter-rr" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-rr">RR</label>
+                                    <input type="checkbox" class="btn-check" id="filter-mx" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-mx">MX</label>
+                                    <input type="checkbox" class="btn-check" id="filter-rx" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-rx">RX</label>
+                                    <input type="checkbox" class="btn-check" id="filter-ht" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-ht">HT</label>
+                                    <input type="checkbox" class="btn-check" id="filter-ho" autocomplete="off" checked>
+                                    <label class="btn btn-outline-or" for="filter-ho">HO</label>
                                 </div>
                                 <!-- Freestyle #fc1965 -->
                                 <div class="btn-group me-2" role="group">
-                                    <input type="checkbox" class="btn-check" id="filter-rr" autocomplete="off" checked>
-                                    <label class="btn btn-outline-fs" for="filter-rr">RR</label>
-                                    <input type="checkbox" class="btn-check" id="filter-rx" autocomplete="off" checked>
-                                    <label class="btn btn-outline-fs" for="filter-rx">RX</label>
-                                    <input type="checkbox" class="btn-check" id="filter-mx" autocomplete="off" checked>
-                                    <label class="btn btn-outline-fs" for="filter-mx">MX</label>
-                                    <input type="checkbox" class="btn-check" id="filter-ht" autocomplete="off" checked>
-                                    <label class="btn btn-outline-fs" for="filter-ht">HT</label>
+                                    <input type="checkbox" class="btn-check" id="filter-ab" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-ab">AB</label>
+                                    <input type="checkbox" class="btn-check" id="filter-dd" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-dd">DD</label>
+                                    <input type="checkbox" class="btn-check" id="filter-js" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-js">JS</label>
+                                    <input type="checkbox" class="btn-check" id="filter-mt" autocomplete="off" checked>
+                                    <label class="btn btn-outline-fs" for="filter-mt">MT</label>
                                 </div>
                                 <!-- Pro Racing #02d3fa -->
                                 <div class="btn-group me-2" role="group">
-                                    <input type="checkbox" class="btn-check" id="filter-ab" autocomplete="off" checked>
-                                    <label class="btn btn-outline-pr" for="filter-ab">AB</label>
-                                    <input type="checkbox" class="btn-check" id="filter-js" autocomplete="off" checked>
-                                    <label class="btn btn-outline-pr" for="filter-js">JS</label>
-                                    <input type="checkbox" class="btn-check" id="filter-mt" autocomplete="off" checked>
-                                    <label class="btn btn-outline-pr" for="filter-mt">MT</label>
-                                    <input type="checkbox" class="btn-check" id="filter-dd" autocomplete="off" checked>
-                                    <label class="btn btn-outline-pr" for="filter-dd">DD</label>
+                                    <input type="checkbox" class="btn-check" id="filter-pb" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-pb">PB</label>
+                                    <input type="checkbox" class="btn-check" id="filter-tc" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-tc">TC</label>
+                                    <input type="checkbox" class="btn-check" id="filter-ar" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-ar">AR</label>
+                                    <input type="checkbox" class="btn-check" id="filter-a" autocomplete="off" checked>
+                                    <label class="btn btn-outline-pr" for="filter-a">A</label>
                                 </div>
                                 <input type="text" class="form-control" placeholder="Search by name" id="filter-text" autocomplete="car-name">
                             </div>
@@ -126,10 +128,33 @@
             <!-- Page:Events -->
             <div class="tab-pane fade" id="events-tab-pane" role="tabpanel" aria-labelledby="events-tab" tabindex="1">Events content</div>
 
-            <!-- Page:Summit -->
-            <div class="tab-pane fade" id="summit-tab-pane" role="tabpanel" aria-labelledby="summit-tab" tabindex="2">Summit content</div>
-
     </main>
+
+    <!-- Popups -->
+    <div id="popups">
+
+        <!-- Popups:Summit -->
+        <div class="modal fade" id="summit-modal">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+                    <div class="modal-header bg-crew">
+                        <button type="button" class="btn-close w-100" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body overflow-hidden p-0 m-0">
+                        <iframe class="h-100 w-100" src="https://www.thecrew-hub.com/summit/calendar" loading="lazy" fetchpriority="low" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Popups: -->
+    <div class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            
+        </div>
+    </div>
 
     <!-- Templates -->
     <div id="templates">
@@ -152,6 +177,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="js/index.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
